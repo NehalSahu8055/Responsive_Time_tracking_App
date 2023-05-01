@@ -15,6 +15,8 @@ for(let i = 0 ; i<n ; i++){
   } )
 };
 
+//default white weekly button
+document.querySelector(".weekly").style.color="var(--wht)";
 
 // Add class "data-btn" to each button element
 
