@@ -1,0 +1,245 @@
+@import url('https://fonts.googleapis.com/css2?family=Rubik:wght@300;400;500&display=swap');
+:root{
+--blue: hsl(246, 80%, 60%);
+--lrw: hsl(15, 100%, 70%);
+--sbp: hsl(195, 74%, 62%);
+--lrs: hsl(348, 100%, 68%);
+--lme: hsl(145, 58%, 55%);
+--vlets: hsl(264, 64%, 52%);
+--sos: hsl(43, 84%, 65%);
+--vdb: hsl(226, 43%, 10%);
+--db: hsl(235, 46%, 20%);
+--dbl:hsl(236, 41%, 34%);
+--deb: hsl(235, 45%, 61%);
+--pb: hsl(236, 100%, 87%);
+--wht:hsl(0, 0%, 100%);
+
+--fss:0.75rem;
+--fsl:2.5rem;
+--fm:0.8125rem;
+--fst:1.125rem;
+--fsxl:2.8rem;
+}
+*{
+    width: 100%;
+    transition:all 0.3s linear;
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+    font-family: 'Rubik', sans-serif;
+}
+*:hover{
+    transition: all 0.3s ease-in;
+}
+body{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    background-color: var(--vdb);
+}
+.container{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap:30px;
+    max-width: 1113px;
+    margin:auto;
+}
+
+.flex1{
+    display: flex;
+    flex-direction: column;
+    background-color: var(--db);
+    border-radius: 12px;
+}
+.overflex1{
+    display: flex;
+    flex-direction: column;
+    background-color: var(--blue);
+    border-radius: 12px;
+    padding:35px 90px 90px 30px;
+
+}
+
+.flex1 .profile-pic{
+    width:86px;
+    height:86px;
+    border-radius: 50%;
+    border:3px solid var(--wht);
+}
+.flex1 .rprt{
+    padding:38px 0 4px 0;
+    color:var(--pb);
+}
+.flex1 .name{
+    color:var(--wht);
+    letter-spacing: 1px;
+    font-weight: 300;
+    font-size: var(--fsl);
+}
+ul{
+    display: flex;
+    flex-direction: column;
+    gap:24px;
+    list-style: none;
+    padding: 30px 30px 33px 30px;
+}
+.li-items{
+    font-size: var(--fst);
+    color:var(--deb);
+}
+.li-items:hover{
+    cursor: pointer;
+;}
+.flex2, .flex3, .flex4{
+    display: flex;
+    flex-direction: column;
+    gap:30px;
+    padding-top:55px;
+}
+.overflex21, .overflex22, .overflex31, .overflex32, .overflex41, .overflex42{
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    border-radius: 12px 12px 0 0;
+    padding:0 18px 0px 159px; 
+}
+.overflex21{
+    background-color: var(--lrw);
+}
+.overflex22{
+    background-color: var(--lme);
+}
+.overflex31{
+    background-color: var(--sbp);
+}   
+.overflex32{
+    background-color: var(--vlets);
+}
+.overflex41{
+    background-color: var(--lrs);
+}
+.overflex42{
+    background-color: var(--sos);
+}
+.icon{
+    height: 55px;
+    overflow: hidden;
+}
+.main-box{
+    display: flex;
+    flex-direction: column;
+    padding:30px 30px 0 30px;
+    background-color: var(--db);
+    border-radius: 12px;
+
+    position: relative;
+    top:-50px;
+}
+.main-box:hover{
+    top:-10px;
+    background-color: var(--dbl);
+    cursor: pointer;
+}
+.main-box .top{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    color:var(--wht);
+}
+.btm{
+    display: flex;
+    flex-direction: column;
+}
+.btm .heading{
+    color: var(--wht);
+    font-size: var(--fsxl);
+    font-weight: 300;
+    padding:40px 0 20px 0;
+}
+.usage{
+    color:var(--deb);
+    font-size: var(--fss);
+    padding-bottom: 30px;
+}
+.ellipse{
+    width:25px;
+}
+.ellipse:hover{
+    cursor: pointer;
+    filter:brightness(500%);
+}
+.line{
+    margin-bottom: 10px;
+}
+.elpseClick{
+    display: flex;
+    flex-direction: column;
+    display: none;
+    color:var(--wht);           
+    padding-bottom:10px;
+    align-items: center;
+    justify-content: center;
+}
+.fa-solid{
+    /* display: flex; */
+    /* justify-content:space-around; */
+}
+.pdf{
+        display: flex;
+        align-items: center;
+        justify-content: flex-end;
+        font-size: var(--fm);
+        /* margin:10px; */
+}
+
+@media only screen and (max-width:1000px){
+    :root{
+        --fss:0.5rem;
+        --fsl:1.2rem;
+        --fm:0.7rem;
+        --fst:1rem;
+        --fsxl:2.5rem;
+    }
+    *{
+        width: 100%;
+    }
+    body{
+        padding:20px 10px;
+    }
+    .container{
+        flex-direction: column;
+        gap:0px;
+    }
+    ul{
+        flex-direction: row;
+        justify-content: space-around;
+    }
+    .li-items{
+        text-align: center;
+    }
+    .flex1 .rprt{
+        padding:15px 0 15px 0;
+    }
+    
+    .overflex1{
+        display: flex;
+        flex-direction: row;
+        gap: 20px;
+        padding: 30px;
+    }
+    .flex1{
+        margin-bottom: 20px;
+    }
+    .flex2, .flex3, .flex4{
+        gap:0;
+        padding-top: 0;
+    }
+    .flex21, .flex22, .flex31, .flex32, .flex41, .flex42{
+        padding-top:0;
+    }
+    
+}
+
